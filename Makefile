@@ -4,7 +4,7 @@ HTMLDOC = cv_shortest
 INDEX = index.html
 INPUT_DIR = latex
 
-CSS_PATH = /moderncv2html/moderncv.css
+CSS_PATH = moderncv2html/moderncv.css
 # Set the correct path for INIT_FILE
 CWD := $(shell pwd)
 INIT_FILE = $(CWD)/moderncv2html/moderncv.perl
