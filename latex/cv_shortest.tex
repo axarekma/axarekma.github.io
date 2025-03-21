@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage[top=10mm,
+            bottom=20mm,
+            left=15mm,
+            right=15mm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\moderncvstyle{casual}  
+
+\moderncvcolor{blue}  
+
+\setlength{\hintscolumnwidth}{3.2cm}
+
+\recomputelengths
+
+\input{include/personal_info.tex}
+
+\newcommand{\customcommand}[1]{#1}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace*{-10mm}
+
+\section{Personal Profile}
+\input{include/profile.tex}
+
+\section{Technical skills}
+\input{include/skills.tex}
+
+\section{Experience}
+\input{include/experience_bullet.tex}
+
+\section{Education}
+\input{include/education.tex}
+
+\section{Languages (CEFR)}
+\input{include/languages.tex} 
+
+
+\end{document}
+

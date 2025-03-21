@@ -1,0 +1,35 @@
+#LaTeX2HTML Version 96.1 : dot.latex2html-init
+$MAX_SPLIT_DEPTH = 0;	# Stop making separate files at this depth
+$TITLE = $default_title; # The default is "No Title" 
+
+$DESTDIR = ''; # Put the result in this directory 
+# When this is set, the generated HTML files will be placed in the 
+# current directory. If set to 0 the default behaviour is to create (or reuse)
+# another file directory.
+$NO_SUBDIR = 0;
+
+# Supply your own string if you don't like the default <Name> <Date>
+$ADDRESS = "<I>$address_data[0] <BR>\n$address_data[1]</I>";
+
+$NO_NAVIGATION = 0;	# 1 = do not put a navigation panel at the top of each page
+$AUTO_NAVIGATION = 1;
+$INFO = 0; # 0 = do not make a "About this document..." section 
+
+# I use this to make the title banner as the modernCV maketitle doienst seem to work
+sub top_navigation_panel {
+    '<DIV CLASS="header">'.
+    '   <SPAN CLASS="name">Axel Ekman, PhD</SPAN>'.
+    '    <SPAN CLASS="cv-title">Curriculum Vitae</SPAN>'.
+    '</DIV>'
+}
+
+sub bot_navigation_panel {
+    '<DIV CLASS="cv-footer">'.
+    '   <DIV CLASS="footer-links">'.
+    '        <A HREF="latex/cv_shortest.pdf" DOWNLOAD> Download Short CV (PDF)</A> |'.
+    '        <A HREF="latex/cv_full.pdf" DOWNLOAD> Download Full CV (PDF)</A>'.
+    '    </DIV>'.
+    '</DIV>'
+}
+
+1;	# This must be the last line

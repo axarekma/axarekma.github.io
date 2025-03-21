@@ -1,0 +1,59 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}  
+\moderncvcolor{purple}  
+\usepackage[scale=0.8]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{multibib}
+\setlength{\hintscolumnwidth}{3.2cm}
+
+% Personal Info
+\input{include/personal_info}
+% include headshot in long version
+\photo[64pt][0.4pt]{include/picture}                       
+
+% bibliography with mutiple entries
+\newcites{article,misc,theses,books}
+{{Articles},{Conferences \& Workshops},{Theses},{Books / Chapters}}
+\begin{document}
+\makecvtitle
+
+\section{Personal Profile}
+\input{include/profile.tex}
+
+\section{Technical skills}
+\input{include/skills.tex}
+
+\section{Experience}
+\input{include/experience_bullet.tex}
+
+\section{Education}
+\input{include/education.tex}
+
+\section{Languages (CEFR)}
+\input{include/languages.tex} 
+
+\pagebreak
+
+\section{Presentations}
+\input{include/presentations.tex}
+
+\section{Publications}
+
+\nocitearticle{*} 
+\bibliographystylearticle{plainyr-rev}
+\bibliographyarticle{publications}
+
+\nocitemisc{*}
+\bibliographystylemisc{plainyr-rev}
+\bibliographymisc{confbib}
+
+\nocitetheses{*}
+\bibliographystyletheses{plainyr-rev}
+\bibliographytheses{theses}
+
+\nocitebooks{*}
+\bibliographystylebooks{plainyr-rev}
+\bibliographybooks{books}
+
+\end{document}
+

@@ -1,0 +1,179 @@
+html {
+    background-color: lightgrey;
+}
+
+body {
+    margin: 24px auto;
+    font-size: 0.8em;
+    font-family: Verdana, Arial, Sans-serif;
+    max-width: 700px;
+    width: 90%;
+    background-color: white;
+    padding: 50px;
+    box-shadow: 3px 3px 20px 4px grey;
+}
+
+.head {
+    text-indent: 24px;
+    font-size: 30px;
+}
+
+.contact {
+    font-size: 0.3em !important;
+    text-align: right;
+}
+
+h2,
+.subsection {
+    color: cornflowerblue;
+    margin-top: 8px;
+    margin-left: 150px;
+    font-size: 1em !important;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+h1,
+.section {
+    font-weight: normal;
+    font-size: 20px;
+    color: cornflowerblue;
+    text-indent: 0;
+    margin-top: 20px;
+}
+
+h1:before,
+.section::before {
+    border-top:
+        dodgerblue solid 5px;
+    width: 84px;
+    content: " ";
+    display: inline-block;
+    margin: 4px 4px 4px 52px !important;
+}
+
+.cventry,
+.cvitem,
+.cvdoubleitem {
+    margin-left: 150px;
+    margin-top: 12px;
+}
+
+.cvlist {
+    margin-left: 170px;
+}
+
+.cvlistdoubleitem {
+    margin-left: 158px;
+}
+
+.cvitem,
+.cvdoubleitem {
+    margin-top: 2px;
+}
+
+.cventry>.title {
+    font-weight: bold;
+}
+
+.cvlist {
+    list-style: circle outside;
+    display: list-item;
+}
+
+.cvlistdoubleitem>span:before {
+    content: "-";
+    position: relative;
+    left: -6px;
+}
+
+.cvlistdoubleitem>.item2 {
+    margin-left: 200px;
+}
+
+.time,
+.cvitem>.title,
+.cvdoubleitem>.title1 {
+    text-align: right;
+    display: block;
+    width: 135px;
+    margin-left: -150px;
+    height: 0px;
+}
+
+.cvdoubleitem>.cont1 {
+    width: 230px;
+    display: inline-block;
+}
+
+.cvdoubleitem>.title2 {
+    display: inline-block;
+    width: 100px;
+}
+
+.cvitem>.comment {
+    float: right;
+}
+
+.cventry>.title,
+.employer {
+    font-style: italic;
+}
+
+.cventry .desc {
+    display: block;
+}
+
+
+span.i {
+    font-style: italic;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 3px solid gray;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 2em;
+    color: gray;
+    font-weight: bold;
+}
+
+.cv-title {
+    font-size: 1.5em;
+    color: gray;
+    font-weight: normal;
+    text-align: right;
+    flex-grow: 1;
+    text-transform: uppercase;
+}
+
+.cv-footer {
+    display: flex;
+    justify-content: center;
+    /* Center the links */
+    align-items: center;
+    border-top: 3px solid gray;
+    /* Matches header style */
+    padding-top: 10px;
+    margin-top: 60px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
